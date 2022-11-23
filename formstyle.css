@@ -1,0 +1,257 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    
+}
+
+.title{
+    margin-left: 100px;
+    font-size: 40px;
+    font-family: Lucida Calligraphy;
+    color: maroon;
+}
+
+.one{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+      
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 25px;
+    
+}
+
+.header{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+       
+}
+.color1{
+    background-color: white;
+}
+
+.color2{
+    background:skyblue;
+    
+}
+
+.header1{
+    display: flex;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+form{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    background: #504b49;
+    padding: 20px;
+   
+    margin: 100px;
+}
+
+form h1{
+    color: white;
+    padding-bottom: 15px;
+}
+
+input[type=text],input[type=email],input[type=password],input[type=number]{
+    padding: 8px;
+    margin: 10px;
+    width: 100;
+    size: 400px;
+    border: solid 2px black;
+    border-radius: 30px;
+    color: maroon;
+    font-size: large;
+}
+
+button{
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    padding: 10px;
+    size: 20;
+    margin-bottom: 20px;
+}
+
+hr{
+    border-top: 2px solid black;
+}
+
+::placeholder{
+    color: black;
+    font-size: 15px;
+}
+
+input[type=submit]{
+    padding: 8px;
+    border: none;
+    color: azure;
+    background:black;
+    width: 200px;
+    font-size: 20px;
+    margin: 10px;
+}
+input[type=button]{
+    padding: 8px;
+    border: none;
+    color: azure;
+    background:black;
+    width: 50px;
+    font-size: 10px;
+    margin: 10px;
+}
+
+
+.three{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.three img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+ 
+.three{
+    padding-left: 20px;
+    margin: 10;
+}
+
+.three p{
+    font-size: 20px;
+    font-family: Lucida Calligraphy;
+}
+
+.color3{
+    background: #F7A072  ;
+}
+
+.header2{
+    margin: auto;
+    max-width: 1080px;
+    
+}
+
+.footer{
+    background: black;
+    color: white;
+    font-size: 14px;
+    padding: 15px 0 20px;
+    
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer1,.footer2,.footer3{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer1{
+    flex-basis: 30%;
+}
+
+.footer2{
+    flex-basis: 1;
+    text-align: center;
+}
+
+.footer2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer3{
+    text-align: center;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+.appimg{
+    margin-top: 5px;
+}
+
+.appimg img{
+    width: 150px;
+}
+
+@media only screen and (max-width: 1115px){
+    nav ul{
+        position: absolute;
+        top: 110px;
+        left: 0;
+        background: #333;
+        width: 100%;
+    }
+     
+    nav ul li a{
+        color: white;
+    }
+    form{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    input[type=text],input[type=email],input[type=password]{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+    input[type=submit]{
+        max-width: 100%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .header1{
+        text-align: center;
+    }
+    .three, .col3{
+        flex-basis: 100%;
+    }
+
+    .form{
+        max-width: 100%;
+
+    }
+}
+
+
+
+
+
+
+

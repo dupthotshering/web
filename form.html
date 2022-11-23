@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+<div class="color1"> 
+    <div class="header">
+        <div class="one" >
+            <div class="two">
+                
+                
+            </div>
+            <div class="title">
+                <p>SportySpot</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Sportswear.html">Sportswear</a></li>
+                    <li><a href="footwear.html">Footwear</a></li>
+                    <li><a href="Sportsaccessories.html">Sportaccesories</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+</div>
+<div class="color2">       
+    <div class="header1">
+        
+        <div class="three">
+           
+            <form class="form" name="f"> 
+                <h1>Login </h1><hr>
+                <input type="text" placeholder="Enter Username" size="25px" name="a"><br>
+                <input type="email" placeholder="Enter email" size="25px" name="b" ><br>
+                <input type="password" placeholder="Enter password" size="25px" name="c"><br><hr>
+                <input type="button" value="Login" onClick="val();val0(document.f.a);val1();"><br>
+                <a href="Signup.html"><u><b><p style="color: black; font-size:15px;">Don't have an account? Sign up from here.</u></b></p></a>
+
+
+            </form>
+            
+            
+
+            
+        </div>
+        
+        <div class="three">
+            <img src="images/jjj.webp" >
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="footer">
+    <div class="header">
+        <div class="header1">
+            <div class="footer1">
+            
+                </div>
+            </div>
+           
+            <div class="footer3">
+                <h3>Follow us on</h3>
+                <ul style="color:#8a8a8a">
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                    <li>Twitter</li>
+                    <li>Snapchat</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <br><p style="color:#8a8a8a; text-align: center;">Copyright2022-SportySport.</p>
+
+    </div>
+</div> 
+
+<script>
+    function val(){
+        if(document.f.a.value=="" || document.f.b.value=="" || document.f.c.value==""){
+            alert("Please fill in all the required field")
+        }
+        else{
+            return true
+        }
+    }
+    function val0(text){
+        var letter=/^[A-Z a-z]+$/;
+        if(text.value.match(letter)){
+            return true;
+        }
+        else{
+            alert("Enter only text in the name field")
+        }
+
+    }
+    function val1(){
+        if(document.f.a.value&&document.f.b.value&&document.f.c.value!=""){
+            window.location.href="home.html";
+        }
+        
+    }
+    
+</script>
+        
+</body>
+</html>
